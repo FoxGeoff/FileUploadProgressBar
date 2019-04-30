@@ -19,7 +19,7 @@ export class AppComponent {
   onSubmit() {
     const formData = new FormData();
     formData.append('file', this.fileData);
-    this.http.post('url/to/your/api', formData, {
+    this.http.post('https://localhost:44362/api/upload', formData, {
       reportProgress: true,
       observe: 'events'
     })
